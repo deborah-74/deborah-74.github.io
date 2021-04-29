@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+  <title>Not Your Typical Love Story</title>
+  <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+<div>
+<!-- <img id="home" class = "home" src = "home.png" width = 3% onmousedown=href="file:///Users/debbie/Documents/NYTLS/index.html"> -->
+
+<a href="#" id="index" onclick="document.location=this.id+'.html';return false;" >
+    <img src="home.png" width = 5% alt="home"/>
+</a>
+\
+  <div>
+<img id="main" class = "choose" src = "choose.png" width = 70%>
+<img id = "thumbnail" class = "thumbnail1" src = "horrorthumbnail.png" width = 30%>
+<img class = "thumbnail2" src = "comedythumbnail.png" width = 30%>
+<img class = "thumbnail3" src = "romancethumbnail.gif" width = 30%>
+</div>
+
+<div>
+  <img id = "play1" class = "play1" src = "playbutton.png" width = 10%>
+  <img id = "pause1" class = "pause1" src = "pause.png" width = 10%>
+  <img class = "hand" src = "hand.png" width = 20%>
+  <img class = "eye" src = "eye.png" width = 20%>
+  <img id="horrorSection" class = "scratch" src = "scratch.png" width = 20%>
+  <video id = "horrorfilm" class = "horrorfilm" width=80% height=80%>
+    <source src="Horror.mp4" type="video/mp4">
+  </video>
+</div>
+
+<div>
+  <img id = "play2" class = "play2" src = "playbutton.png" width = 10%>
+  <img id = "pause2" class = "pause2" src = "pause.png" width = 10%>
+  <img id="comedySection" class = "laugh" src = "laugh.png" width = 10%>
+  <img class = "laugh2" src = "laugh.gif" width = 15%>
+  <img class = "troll" src = "troll.png" width = 15%>
+  <video id = "comedyfilm" class = "comedyfilm" width=80% height=80%>
+    <source src="comedyfilm.mp4" type="video/mp4">
+  </video>
+</div>
+
+<div>
+  <img id = "play3" class = "play3" src = "playbutton.png" width = 10%>
+  <img id = "pause3" class = "pause3" src = "pause.png" width = 10%>
+  <img class = "heart" src = "heart.png" width = 7%>
+  <img id="romanceSection" class = "kiss" src = "kiss.gif" width = 20%>
+  <img class = "love" src = "love.gif" width = 17%>
+  <video id = "romancefilm" class = "romancefilm" width=80% height=80%>
+    <source src="romancefilm.mp4" type="video/mp4">
+  </video>
+</div>
+
+<div id="grad1" style="text-align:center;">0deg</div><br>
+
+<div class = "horror">
+
+<a id="hbtn" href="#" onclick="return false;" onmousedown="autoScrollTo('horrorSection');" onmousedown="cinema.play()">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  Horror
+</a>
+</div>
+
+<div class = "romance">
+<a id="rbtn" href="#" onclick="return false;" onmousedown="autoScrollTo('romanceSection');" onmousedown="cinema.play()">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  Romance
+</a>
+</div>
+
+<div class = "comedy">
+<a id="cbtn" href="#" onclick="return false;" onmousedown="autoScrollTo('comedySection');">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+Comedy
+</a>
+</div>
+
+<div id = "ending" class = "ending">
+
+  <a id="hEnd" class="hEnd" href="#" onclick="return false;">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    Horror
+  </a>
+
+  <a id="cEnd" class="cEnd" href="#" onclick="return false;">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    Comedy
+  </a>
+
+  <a id="rEnd" class="rEnd" href="#" onclick="return false;">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    Romance
+  </a>
+
+<h1 class = "choice" > Choose Your Ending </h1>
+
+</div>
+
+<img class = "up1" src = "up.png" width = 3% onclick = "autoScrollTo('main');">
+<img class = "down1" src = "down.png" width = 3% onclick = "autoScrollTo('comedySection');">
+<img class = "up2" src = "up.png" width = 3% onclick = "autoScrollTo('horrorSection');">
+<img class = "down2" src = "down.png" width = 3% onclick = "autoScrollTo('romanceSection');">
+<img class = "up3" src = "up.png" width = 3% onclick = "autoScrollTo('comedySection');">
+
+</div>
+    <script src="script.js" type= "text/javascript"></script>
+</body>
+
+
+</html>
